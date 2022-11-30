@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"> 
+    <title>document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+          <div class="logo">
+            <h2>port <span>folio </span></h2> 
+            </div>
+
+            <nav>
+                <ul id ="liks"></ul>
+                    <li><a href="#" class=active>home</a></li>
+
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">resume</a></li>
+                    <li><a href="#">work</a></li>
+                    <li><a href="#">contact</a></li>
+                    <img src="imgages/cross.png" id="cross"alt="">
+                </ul>
+                <img src="imgages/bars.png"id="bars" alt="">
+            </nav>
+         </div>
+         <div class=" content"></div>
+         <div.class="info">
+            <h2>hi, my name is</h2>
+            <h1>maroof ahmed</h1>
+            <h2>and i,am a <span>web develper</span> </h2>
+            <p>lorem ipsum dolor sit, amet consectetur adipisicing elit. ipsum nihil
+             excepturi quasi ullam eveniet modi omnis, asperiores quas quis neque</p>
+             <button type="button">hire me</button>   
+        </div>
+
+        <div clss="content-img">
+            <img src="img/develper pic.jpg" alt="">
+    </div>   
+    </div>  
+</div> 
+
+<script>
+    let links = document.getElementById("links");
+    let cross = document.getElementById("bars");
+    let bars = document.getElementById("bars");
+
+    bars.onclick = () => {
+        links.style.right = "0px";
+    }
+cross.onclick = () => {
+        links.style.right = "-100%";
+    }
+</script>
+</body>
+</html>

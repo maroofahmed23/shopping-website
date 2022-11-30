@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?fmily=vare+round&display=swap");
+
+*{
+    padding: 0;
+    margin : 0;
+    box-sizing: border-box;
+    font-family: "varela Round", sans-serif;  
+}
+
+.container{
+    width: 10px;
+    height: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    color: #fff;
+}
+    
+   .nav-bar{
+width: 100px;
+padding:0 60px;
+padding-top: 15px;
+display: flex;
+ align-items: center;
+ justify-content: space-between;
+} 
+
+ .logo h2{
+    font-size: 40px;
+    cursor: pointer;
+ }
+    
+ span{
+    color: #ff004f;
+}  
+ 
+  nav ul li{
+   display: inline-block; 
+  }   
+    
+  nav ul li{
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 700;
+  color:#fff;
+  margin: 0 12px
+}
+
+ nav ul li a:hover{
+    color: #ff004f;
+ }   
+    
+   .active{
+    color: #ff004f;
+   } 
+    
+   .content{
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+    padding: 0 90px;
+   } 
+    
+.info h1{
+font-size: 15px;    
+}   
+    
+.info p{
+    font-size: 15px;
+    margin-top: 20px;
+}   
+    
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 30px;
+    padding: 8px 30px;
+    border-radius: 4px;
+    font-size: 18px;
+    background-color: #ff004f; 
+    color:#fff; 
+} 
+  
+button:hover{
+    background-color: #de094c;
+}
+
+.content-img img{
+ width: 400px;
+}   
+
+/*--------media query------- */
+nav img{
+    display: none;
+}
+@media screen and (max- width: 500px){
+.containter{
+    height: 100px;
+} 
+
+.nav-bar{
+    padding: 15px 20px;
+}
+
+.content{
+ flex-direction: column;
+ padding: 0 px;
+    }  
+    
+    .info{
+     padding: 0 30px;
+     margin-top: 40PX; 
+    }
+
+    .info h2{
+   font-size: 20px;
+}
+
+ .info h1{
+font-size: 48px;
+margin: 8px 0;
+ } 
+ .contant-img img{
+    width: 350px;
+
+ }  
+
+ nav ul{
+    width: 100px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    padding: top -50px;
+    z-index: 1px;
+    background-color: #353b48;
+    transition: all .5s;
+}
+ nav ul li{
+    display: black;
+    margin: 40px 0;
+    text-align: center;
+} 
+
+ nav img{
+    display: block;
+    width: 35px;
+    background-color: #fff;
+    cursor: pointer;
+ }
+
+ nav ul img {
+ position: absolute;
+ top: 30px;
+ left: 20px;
+ }
+
+ nav ul li {
+    font-size: 20px;
+    font-weight: 900;
+ }
+}
+
+
+
+
+    
